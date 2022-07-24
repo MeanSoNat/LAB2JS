@@ -24,20 +24,20 @@
 */
 
 
-document.querySelector('#push').onclick = function (){
-    if(document.querySelector('#newtask input').value.length == 0){
-        alert('Please enter new task')
+document.querySelector('#Add').onclick = function (){
+    if(document.querySelector('#new_todo input').value.length == 0){
+        alert('Please write anything!')
     } 
     else {
         document.querySelector('#task').innerHTML += 
         `<div class="task">
-            <span id="taskname">
-                ${document.querySelector('#newtask input').value}
-            </span>
-            <button class="delete">
-                <i>Delete</i>
-            </button>
-            <hr>
+            <span id="taskname" class="col-4">
+                ${document.querySelector('#new_todo input').value}
+                </span>
+                <button class="delete">
+                    <i class="bi bi-trash col-6"></i>
+                </button>
+                
         </div>
         `;
 
@@ -49,3 +49,4 @@ document.querySelector('#push').onclick = function (){
         }
     }
 }
+

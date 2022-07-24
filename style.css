@@ -1,99 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600;700&family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Gloria+Hallelujah&family=Sacramento&display=swap');
-*,
-*:before,
-*:after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Edu NSW ACT Foundation';
-    height: 100vh;
-    background: #04182c;
-}
-.container{
-    text-align: inherit;
-    width: 40%;
-    top: 50%;
-    left: 50%;
-    background: white;
-    border-radius: 5px;
-    min-width: 410px;
-    position: absolute;
-    min-height: 136px;
-    transform: translate(-50%,-50%);
-}
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600;700&family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Gloria+Hallelujah&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap');
+/*
 
-
-
-#newtask{
-    position: relative;
-    padding: 30px 20px;
+    container: class
+    newtask: id
+    button: push(id)
+    taskname: id
+    delete: button
+*/
+.backcol{
+    background: linear-gradient(
+        to left,
+        pink 0%,
+        rgb(5, 19, 74) 50%,
+        rgb(88, 24, 130) 50%,
+        rgb(68, 149, 149) 100%
+      );
+      border-top-left-radius: 10%;
+      border-bottom-right-radius: 10%;
 }
-#newtask input{
-    width: 75%;
-    height: 45px;
-    padding: 12px;
-    color: #111111;
-    font-weight: 500;
-    position: relative;
-    border-radius: 5px;
-    font-family: 'Poppins',sans-serif;
-    font-size: 15px;
-    border: 2px solid #d1d3d4;
-}
-
-#newtask input:focus{
-    outline: none;
-    border-color: #0d75ec;
-}
-
-#newtask button{
-    position: relative;
-    float: right;
-    font-weight: 500;
+#settle-in{
+    padding-left: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
-    background-color: #0d75ec;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-    outline: none;
-    width: 20%;
-    height: 45px;
-    border-radius: 5px;
-    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+}
+.contain{
+    border-radius: 2%;
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg,
+                             rgba(2,0,36,1) 11%,
+                             rgba(9,9,121,1) 57%, 
+                             rgba(0,212,255,1) 100%);
+    
+    padding: 2%;
+}
+.h3 ,.h4{
+    font-style: normal;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.order-first{
+    margin-top: 4%;
+    padding: 4%;
+}
+.input-group .btn {
+    position: relative;
+    z-index: 2;
+    margin-right: -21%;
+    width: 31%;
+}
+#new_todo{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 6%;
+}
+.input-group{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: stretch;
+    flex-direction: row;
 }
 
-#tasks{
-    border-radius: 10px;
-    width: 100%;
-    position: relative;
-    background-color: #ffffff;
-    padding: 30px 20px;
-    margin-top: 10px;
+.input-group input {
+    margin-right: 4%;
 }
 
 .task{
+    color: aliceblue;
     border-radius: 5px;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #939697;
-    cursor: pointer;
-    background-color: #c5e1e6;
+    border: 1px solid #5d327d;
+    cursor: default;
+    background-color: #3b49a3;
     height: 50px;
     margin-bottom: 8px;
     padding: 5px 10px;
     display: flex;
 }
-.task span{
-    font-family: 'Poppins',sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-}
 
 .task button{
-    background-color: #0a2ea4;
-    color: #ffffff;
+    background-color: #07080db7;
+    color: #00fb32;
     border: none;
     cursor: pointer;
     outline: none;
@@ -102,6 +92,11 @@ body{
     border-radius: 5px;
 }
 
-.h3{
-    
+#task{
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff83;
+    padding: 30px 20px;
+    margin-top: 10px;  
 }
