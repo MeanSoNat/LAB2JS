@@ -1,0 +1,107 @@
+        <h1 class="display-1">ToDo App</h1>
+        <!--Input-->
+        <div>
+            <div class="mb-3 row">
+              <label for="inputtodo" class="col-sm-2 col-form-label">Todo</label>
+              <div class="col-sm-10">
+                <input id="newtodo" type="text" class="form-control" id="inputtodo" />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="inputFahrenheit" class="col-sm-2 col-form-label"></label>
+              <div class="col-sm-10">
+                <button id="addbtn" onclick="addTodo()" type="button" class="btn btn-primary"> Add </button>
+              </div>
+            </div>
+          </div>
+          <!-- List -->
+          <div>
+            <ul id="todolist" class="list-group">
+              
+            </ul>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          // document.getElementById('click_del_list').addEventListener('click', deleteElemt)
+// let CelToFah = (Celsius) =>{
+//     var c = document.getElementById('inputCelsius').value;
+//     var f = document.getElementById('inputFahrenheit').value
+//     console.log(c,f)
+// }
+
+
+// document.getElementById('close').addEventListener('click', deleteElemt)
+for(var i; i < close.length; i++){
+    // close[i].onclick = function (){
+        // let parent = document.getElementById('mytodolist')
+        // let child = document.getElementsByTagName('li')
+        // parent.remove(child)
+        
+        console.log(close[i])
+    }
+    
+    let e = document.getElementById('mytodolist')
+    var Node = document.getElementsByTagName('li')
+    for (var i = 0 ; i < Node.length; i++){
+        var span = document.createElement('span')
+        var txt = document.createTextNode('\u007D')
+        
+        span.className = "close"
+        span.appendChild(txt)
+            Node[i].appendChild(span)
+        }
+        
+        function addtodo(){    
+            let newlist = document.createElement('li')
+            newlist.setAttribute("id", "click_del_list")
+            let gettxt = document.getElementById('todonew').value
+            let node = document.createTextNode(gettxt)
+            newlist.appendChild(node)
+            
+            // check null text
+            if (gettxt === '') {
+                alert("You must write something!");
+            } else {
+                e.appendChild(newlist)
+            }
+            
+        }
+        
+        
+        // function del(){
+            // create delete element
+            // //    let parent = document.getElementById("mytodolist");
+            // //    let child = document.getElementById("list2");
+            // //    parent.removeChild(child);
+            
+            // // let NodeList = document.getElementsByTagName('li')
+            // // var i;
+            // // for(i = 0; i < NodeList.length ; i++){
+                // //     console.log('WP')
+                // // }
+                
+                //     // let parent = document.getElementById('mytodolist')
+                //     // let child = document.getElementsByTagName('li')
+                //     // parent.remove(child)
+                
+                
+                // }
+                
+                function deleteElemt(){
+                    let parent = document.getElementsByTagName('li')
+                    for(var i = 0; i< parent.length; i++ ){
+                        console.log(parent[i])
+                    }
+                }
+                
+                var close = document.getElementsByClassName('close')
